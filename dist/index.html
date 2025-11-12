@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Triplos / Cuádruplos</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Triplos / Cuádruplos</h1>
+    <p class="descripcion">Ingresa una expresión (use espacios)</p>
+
+    <div class="inputs">
+      <input id="expresion" type="text" placeholder="Ejemplo: 2 + 2 / 5">
+    </div>
+
+    <div class="selector">
+      <select id="tipoOperacion">
+        <option value="triplos">Triplos</option>
+        <option value="cuadruplos">Cuádruplos</option>
+        <option value="ambos">Ambos</option>
+      </select>
+      <button id="btnGenerar">Generar</button>
+      <button id="btnLimpiarFormulario" class="btn-secundario">Limpiar Formulario</button>
+    </div>
+
+    <p id="resultado"></p>
+    <div id="salida"></div>
+
+    <div class="historial-container">
+      <h3 class="tituloHistorial">Historial de Operaciones</h3>
+      <button id="btnLimpiarHistorial">Borrar Historial</button>
+    </div>
+    <div id="historial"></div>
+  </div>
+
+  <script src="./bundle.js"></script>
+</body>
+</html>
